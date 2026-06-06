@@ -51,7 +51,3 @@ nav p {
   font-size: 3rem;
   text-align: center;
 }
-.RidesImages {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-}
