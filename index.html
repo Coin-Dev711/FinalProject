@@ -3,40 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="stylesheets/stylesheet.css" />
     <title>Tinkertown-Home Page</title>
     <style>
-      #S2 {
+      #section2 {
         padding: 2rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 0.7fr 1.2fr;
         grid-template-rows: 1fr;
-        justify-items: center;
+        justify-items: right;
       }
-      #FerrisWheel1 {
-        border-radius: rem;
+      #welcome-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 3rem;
+      }
+      #welcome-gallery img {
+        width: 90%;
       }
     </style>
   </head>
   <body>
     <header>
       <nav>
-        <span>
-          <p id="TinkerTown">Tinkertown</p>
-        </span>
-        <div id="Fill"></div>
-        <span>
-          <p><a href="rides.html">Rides</a></p>
-        </span>
+        <ul>
+          <li>
+            <a href="index.html">Tinkertown</a>
+          </li>
+          <li>
+            <a href="rides.html">Rides</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
-      <section id="S1">
+      <section id="intro">
         <h1>Welcome to Tinkertown!</h1>
         <h2>A place of Whimsy! Fun! Adventure!</h2>
       </section>
-      <section id="S2">
-        <p style="font-size: 2.5rem">
+      <section id="section2">
+        <p>
           This is Tinkertown Amusements! We're an outdoor amusement park with
           over 25 rides and attractions – the place for fun in the summer! Our
           friendly youthful staff is here to make you feel welcome! Take a
@@ -44,16 +51,15 @@
           or enjoy our wide variety of food and tasty treats.
         </p>
         <img
-          id="FerrisWheel1"
-          style="text-align: center; border-radius: 5rem; width: 80%"
+          id="ferris-wheel1"
+          style="border-radius: 5rem; width: 80%; margin-right: 7rem"
           src="images/Ferris_Wheel.png"
           alt="Ferris Wheel" />
       </section>
       <section>
-        <!--Second Section is to differentiate the border from the mini-slideshow-->
         <h3>Tinkertown Is Open... This Weekend!</h3>
         <h4>June 6+7 @12-6PM</h4>
-        <span>
+        <div id="welcome-gallery">
           <img src="images/Happy_Winner.png" alt="Excited kid wins a prize!" />
           <img src="images/Bumper_Cars.png" alt="Kids in Bumper Cars" />
           <img
@@ -66,22 +72,36 @@
           <img
             src="images/Ferris_Wheel2.png"
             alt="A Ferris Wheel with a beautiful sunset in the background" />
-          <!--All of this should be in a slideshow, learn how to make that-->
-        </span>
+        </div>
       </section>
     </main>
     <footer>
       <section>
-        <h3>Tinkertown's Address:</h3>
-        <p>56111 Murdock Road Springfield, MB R5T H3</p>
-        <p>© 2021 by Tinkertown</p>
-        <h3>Contact Info:</h3>
-        <p>
-          For more info, feel free to contact us. Phone number: 1-204-257-8095
-          <br />
-          <br />
-          Email us <a href="mailto:Tinkertown@gmail.com">Here!</a>
-        </p>
+        <div>
+          <h3>Tinkertown's Address:</h3>
+          <p>56111 Murdock Road Springfield, MB R5T H3</p>
+          <p>© 2021 by Tinkertown</p>
+          <h3>Contact Info:</h3>
+          <p>
+            For more info, feel free to contact us. Phone number: 1-204-257-8095
+            <br />
+            <br />
+            Email us <a href="mailto:Tinkertown@gmail.com">Here!</a>
+          </p>
+        </div>
+        <div>
+          <form id="end-form" name="end-form" method="get">
+            <fieldset for="end-form">
+              <legend>Send Message directly through here</legend>
+              <br />
+              <label for="direct-msg">Your Message:</label>
+              <br />
+              <textarea id="direct-msg"></textarea>
+              <br />
+              <button type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
       </section>
     </footer>
   </body>
