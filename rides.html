@@ -6,24 +6,19 @@
     <title>Tinkertown - Rides</title>
     <link rel="stylesheet" href="stylesheets/stylesheet.css" />
     <style>
-      #kids-rides {
+      .rides {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(auto, 1fr);
-      }
-      section img {
-        width: 90%;
-      }
-      #regular-rides {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto, 1fr);
-      }
-      #regular-rides p {
         font-size: 2rem;
       }
-      #regular-rides img {
+      .rides img {
         width: 90%;
+      }
+      @media (max-width: 768px) {
+        .rides {
+          display: block;
+        }
       }
     </style>
   </head>
@@ -53,7 +48,7 @@
       <section>
         <h2>Kids Rides</h2>
         <br />
-        <div id="kids-rides">
+        <div class="rides">
           <section>
             <h3>Kiddie Swing</h3>
             <p>
@@ -123,7 +118,7 @@
       </section>
       <section>
         <h2>Regular Rides</h2>
-        <div id="regular-rides">
+        <div class="rides">
           <section>
             <h3>Merry-Go-Round</h3>
             <p>
@@ -363,16 +358,31 @@
     </main>
     <footer>
       <section>
-        <h3>Tinkertown's Address:</h3>
-        <p>56111 Murdock Road Springfield, MB R5T H3</p>
-        <p>© 2021 by Tinkertown</p>
-        <h3>Contact Info:</h3>
-        <p>
-          For more info, feel free to contact us. Phone number: 1-204-257-8095
-          <br />
-          <br />
-          Email us <a href="mailto:Tinkertown@gmail.com">Here!</a>
-        </p>
+        <div>
+          <h3>Tinkertown's Address:</h3>
+          <p>56111 Murdock Road Springfield, MB R5T H3</p>
+          <p>© 2021 by Tinkertown</p>
+          <h3>Contact Info:</h3>
+          <p>
+            For more info, feel free to contact us. Phone number: 1-204-257-8095
+            <br />
+            <br />
+            Email us <a href="mailto:Tinkertown@gmail.com">Here!</a>
+          </p>
+        </div>
+        <div>
+          <form id="end-form" name="end-form" method="get">
+            <fieldset for="end-form">
+              <legend>You can also send message to use directly</legend>
+              <br />
+              <label for="direct-msg">Send your message here:</label>
+              <br />
+              <textarea id="direct-msg"></textarea>
+              <br />
+              <button type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
       </section>
     </footer>
   </body>
