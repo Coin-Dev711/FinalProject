@@ -1,116 +1,174 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheets/stylesheet.css" />
-    <title>Tinkertown-Home Page</title>
-    <style>
-      #section2 {
-        padding: 2rem;
-        display: grid;
-        grid-template-columns: 0.7fr 1.2fr;
-        grid-template-rows: 1fr;
-        justify-items: right;
-      }
-      #welcome-gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        padding: 3rem;
-      }
-      #welcome-gallery img {
-        width: 90%;
-      }
-      @media (max-width: 768px) {
-        #section2 {
-          display: block;
-        }
-        #welcome-gallery {
-          display: block;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Tinkertown</a>
-          </li>
-          <li>
-            <a href="rides.html">Rides</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="intro">
-        <h1>Welcome to Tinkertown!</h1>
-        <h2>A place of Whimsy! Fun! Adventure!</h2>
-      </section>
-      <section id="section2">
-        <p style="font-size: 2.5rem">
-          This is Tinkertown Amusements! We're an outdoor amusement park with
-          over 25 rides and attractions – the place for fun in the summer! Our
-          friendly youthful staff is here to make you feel welcome! Take a
-          relaxing half mile ride on the Train. Play some games. Have a picnic
-          or enjoy our wide variety of food and tasty treats.
-        </p>
-        <img
-          id="ferris-wheel1"
-          style="border-radius: 5rem; width: 80%; margin-right: 7rem"
-          src="images/Ferris_Wheel.png"
-          alt="Ferris Wheel" />
-      </section>
-      <section>
-        <h3>Tinkertown Is Open... This Weekend!</h3>
-        <h4>June 6+7 @12-6PM</h4>
-        <div id="welcome-gallery">
-          <img src="images/Happy_Winner.png" alt="Excited kid wins a prize!" />
-          <img src="images/Bumper_Cars.png" alt="Kids in Bumper Cars" />
-          <img
-            src="images/Cotton_Candy.png"
-            alt="A few people eating Cotton Candy" />
-          <img src="images/Nice_Clown.png" alt="A Nice Clown Smiling" />
-          <img
-            src="images/Roller_Coaster.png"
-            alt="People having fun riding a Roller Coaster" />
-          <img
-            src="images/Ferris_Wheel2.png"
-            alt="A Ferris Wheel with a beautiful sunset in the background" />
-        </div>
-      </section>
-    </main>
-    <footer>
-      <section>
-        <div>
-          <h3>Tinkertown's Address:</h3>
-          <p>56111 Murdock Road Springfield, MB R5T H3</p>
-          <p>© 2021 by Tinkertown</p>
-          <h3>Contact Info:</h3>
-          <p>
-            For more info, feel free to contact us. Phone number: 1-204-257-8095
-            <br />
-            <br />
-            Email us <a href="mailto:Tinkertown@gmail.com">Here!</a>
-          </p>
-        </div>
-        <div>
-          <form id="end-form" name="end-form" method="get">
-            <fieldset for="end-form">
-              <legend>You can also send message to use directly</legend>
-              <br />
-              <label for="direct-msg">Send your message here:</label>
-              <br />
-              <textarea id="direct-msg"></textarea>
-              <br />
-              <button type="submit">Submit</button>
-            </fieldset>
-          </form>
-        </div>
-      </section>
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="stylesheets/stylesheet.css"
+		/>
+		<title>Tinkertown-Home Page</title>
+		<style>
+			#section2 {
+				padding: 2rem;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: 1fr;
+			}
+			#welcome-gallery {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(2, 1fr);
+			}
+			#welcome-gallery img {
+				width: 95%;
+			}
+			#welcome-gallery {
+				padding: 0rem;
+				border: 0rem;
+			}
+			/*A Media Query was chosen to allow for the website to
+				still look good on smaller devices, targetting
+				standard tablets and android in Portrait Mode, and
+				testing the browser window at different sizes to
+				make sure it remains visually appealing at all
+				widths*/
+			@media (max-width: 992px) {
+				#section2 {
+					display: block;
+				}
+				#section2 iframe {
+					width: 90%;
+				}
+				#welcome-gallery {
+					display: block;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Tinkertown</a>
+					</li>
+					<li>
+						<a href="rides.html">Rides</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="intro">
+				<h1>Welcome to Tinkertown!</h1>
+				<h2>A place of Whimsy! Fun! Adventure!</h2>
+			</section>
+			<br />
+			<section id="section2">
+				<p style="font-size: 2.4rem; margin-right: 5rem">
+					This is Tinkertown Amusements! We're an outdoor
+					amusement park with over 25 rides and attractions
+					– the place for fun in the summer! Our friendly
+					youthful staff is here to make you feel welcome!
+					Take a relaxing half mile ride on the Train. Play
+					some games. Have a picnic or enjoy our wide
+					variety of food and tasty treats.
+				</p>
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/7JJpcSIZ6LY?si=6ZzLZe7iyFitCGaj"
+					title="YouTube video player"
+					frameborder="0"
+					allow="
+						accelerometer;
+						autoplay;
+						clipboard-write;
+						encrypted-media;
+						gyroscope;
+						picture-in-picture;
+						web-share;
+					"
+					style="
+						border-radius: 1rem;
+						border: 0.35rem solid #121212;
+					"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></iframe>
+			</section>
+			<br />
+			<section>
+				<h3>Tinkertown Is Open... This Weekend!</h3>
+				<h4>June 6+7 @12-6PM</h4>
+				<section id="welcome-gallery">
+					<img
+						src="images/Happy_Winner.png"
+						alt="Excited kid wins a prize!"
+					/>
+					<img
+						src="images/Bumper_Cars.png"
+						alt="Kids in Bumper Cars"
+					/>
+					<img
+						src="images/Cotton_Candy.png"
+						alt="A few people eating Cotton Candy"
+					/>
+					<img
+						src="images/Nice_Clown.png"
+						alt="A Nice Clown Smiling"
+					/>
+					<img
+						src="images/Roller_Coaster.png"
+						alt="People having fun riding a Roller Coaster"
+					/>
+					<img
+						src="images/Ferris_Wheel2.png"
+						alt="A Ferris Wheel with a beautiful sunset in the background"
+					/>
+				</section>
+			</section>
+		</main>
+		<br />
+		<footer>
+			<section>
+				<section>
+					<h3>Tinkertown's Address:</h3>
+					<p>56111 Murdock Road Springfield, MB R5T H3</p>
+					<p>© 2021 by Tinkertown</p>
+					<h3>Contact Info:</h3>
+					<p>
+						For more info, feel free to contact us. Phone
+						number: 1-204-257-8095
+						<br />
+						<br />
+						Email us
+						<a href="mailto:Tinkertown@gmail.com">Here!</a>
+					</p>
+				</section>
+				<section>
+					<form id="end-form" name="end-form" method="get">
+						<fieldset for="end-form">
+							<legend>
+								You can also send a message to us directly!
+							</legend>
+							<br />
+							<label for="direct-msg"
+								>Send your message here:</label
+							>
+							<br />
+							<br />
+							<textarea id="direct-msg"></textarea>
+							<br />
+							<button type="submit">Submit</button>
+						</fieldset>
+					</form>
+				</section>
+			</section>
+		</footer>
+	</body>
 </html>
