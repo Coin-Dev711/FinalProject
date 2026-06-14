@@ -1,107 +1,111 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-  background: #ededed;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  width: 95%;
-  margin: 0 auto;
+	background: #ededed;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	width: 95%;
+	margin: 0 auto;
 }
+/*The nav has a usual configuration, with notable
+attributes being the width at 95% to keep the website
+as a liquid layout one, the position being fixed so
+you can access the nav from anywhere and click on the
+same website you're on to function as a back to top
+button, the top attribute keeping the nav at the top,
+and the margin: attribute centering the website*/
 nav {
-  display: flex;
-  background: #edb650;
-  text-align: center;
-  font-size: 2rem;
-  margin: 4rem;
-  position: fixed;
-  top: 0;
-  width: 95%;
-  margin: 0 auto;
-  font-weight: 700;
+	background: #edb650;
+	text-align: center;
+	font-size: 2rem;
+	margin: 4rem;
+	position: fixed;
+	top: 0;
+	width: 95%;
+	margin: 0 auto;
+	font-weight: 700;
 }
+/*The ul tas within the nav use the flex layout and
+changes the list-style to none so that the black
+circles that usually appear behind each list in not
+there, hiding the fact that it is a list in the
+first place, and changing the margin and padding to
+0 to make sure the list covers the entire space*/
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 nav ul li {
-  width: 100%;
-  height: 100%;
-  border: 0.35rem solid #121212;
-  padding: 1rem;
-}
-nav ul li a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	border: 0.35rem solid #121212;
+	padding: 1rem;
 }
 h1 {
-  font-size: 4.8rem;
-  text-align: center;
+	font-size: 4.8rem;
 }
 h2 {
-  font-size: 3.6rem;
-  text-align: center;
+	font-size: 3.6rem;
 }
 h3 {
-  font-size: 2.8rem;
-  text-align: center;
+	font-size: 2.8rem;
 }
 h4 {
-  font-size: 2.4rem;
-  text-align: center;
+	font-size: 2.4rem;
 }
 p {
-  font-size: 2rem;
+	font-size: 2rem;
+	line-height: 140%;
 }
 section {
-  padding: 3rem;
-  background: #edb650;
-  margin: 3rem;
-  border: 0.35rem solid #121212;
-  border-radius: 5rem;
+	padding: 3rem;
+	background: #edb650;
+	margin: 2rem;
+	border: 0.35rem solid #121212;
 }
 img {
-  border-radius: 2rem;
-  border: 0.35rem solid #121212;
-  margin: 1rem;
+	border-radius: 2rem;
+	border: 0.35rem solid #121212;
+	margin: 1rem;
 }
 nav p {
-  font-size: 2rem;
-  text-align: center;
+	font-size: 2rem;
+	text-align: center;
 }
 #intro {
-  font-size: 2.5rem;
-  margin-top: 10rem;
+	font-size: 2.5rem;
+	margin-top: 10rem;
 }
 fieldset {
-  font-size: 2rem;
-  border: 0.2rem solid #121212;
+	font-size: 2rem;
+	border: 0.2rem solid #121212;
 }
+/*The textarea now always resizes to fit 90%
+of the fieldset's width while being in the
+center thanks to the margin and width
+attribute values, the border was increased to
+fit with the aesthetic of the website more and
+the border-radius is more rounded*/
 textarea {
-  width: 60rem;
-  height: 30rem;
-  padding: 1.5rem;
-  margin: 2rem;
-  border: 0.3rem solid #121212;
-  border-radius: 1rem;
-  font-size: 2rem;
+	width: 90%;
+	height: 30rem;
+	padding: 1.5rem;
+	border: 0.3rem solid #121212;
+	border-radius: 1rem;
+	font-size: 2rem;
+	margin: 0 auto;
 }
 button {
-  font-size: 2rem;
+	font-size: 2rem;
 }
-@media (max-width: 768px) {
-  textarea {
-    width: 100%;
-    display: inline;
-  }
+footer section section {
+	border: 0;
+	padding: 0;
 }
